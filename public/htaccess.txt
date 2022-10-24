@@ -1,0 +1,9 @@
+#Options +FollowSymLinks -MultiViews -Indexes
+
+#RewriteEngine On
+#RewriteBase /
+
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteRule    !\.(jpg|css|js|gif|png)$    public/    [L]
+#RewriteRule !\.(jpg|css|js|gif|png)$ public/index.php?url=$1
